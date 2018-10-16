@@ -39,9 +39,6 @@ a:hover {
 h1 a {
   color: #fafafa;
 }
-h1 {
-  font-size: 64px;
-}
 .table {
   margin: auto;
   display: grid;
@@ -70,7 +67,7 @@ span {
   border-top-right-radius: 4px;
   font-size: 14px;
 }
-@media all and (min-aspect-ratio: 27/16) {
+@media screen and (min-aspect-ratio: 27/16) {
   .table {
     grid-template-columns: repeat(2, 70vh);
     grid-template-rows: repeat(2, 35vh);
