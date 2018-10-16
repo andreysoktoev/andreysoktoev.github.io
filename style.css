@@ -77,3 +77,10 @@ span {
     grid-gap: 10vh;
   }
 }
+@media screen and (max-width: 479px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
