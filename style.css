@@ -39,6 +39,9 @@ a:hover {
 h1 a {
   color: #fafafa;
 }
+h1 {
+  font-size: 64px;
+}
 .table {
   margin: auto;
   display: grid;
@@ -74,10 +77,13 @@ span {
     grid-gap: 10vh;
   }
 }
-@media handheld {
-  #projects {
+@media screen and (max-width: 479px) {
+  .table {
     display: flex;
     flex-direction: column;
     height: auto;
+  }
+  h1 {
+    font-size: 1em;
   }
 }
