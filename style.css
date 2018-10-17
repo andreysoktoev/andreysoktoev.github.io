@@ -16,25 +16,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
 }
-.project-tile {
-  position: relative;
-}
 img {
   max-width: 100%;
-  display: flex;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  background-color: rgba(30, 30, 30, 0.75);
-  padding: 0px 20px;
-  border-bottom-left-radius: 4px;
-  border-top-right-radius: 4px;
-  font-size: 14px;
-  display: none;
 }
 @media screen and (max-width: 800px) {
   .table {
