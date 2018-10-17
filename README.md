@@ -1,1 +1,1 @@
-Personal Portfolio Page
+Minimalist Portfolio Page
