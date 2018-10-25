@@ -1,8 +1,9 @@
 html {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto Condensed', Arial;
+  font-family: 'Source Sans Pro', Arial;
   font-size: 14px;
-  background-color: WhiteSmoke;
+  color: #454444;
+  background-color: whitesmoke;
   scroll-behavior: smooth;
 }
 body {
@@ -10,15 +11,46 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-header {
-  padding: 10px 50px 10px;
-  background-color: white;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+  background-color: rgba(245, 245, 245, 0.95);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.20);
+}
+nav ul {
+  padding-right: 50px;
+  display: flex;
+}
+nav li {
+  list-style: none;
+  padding-left: 50px;
+}
+.home {
+  /*background-color: white;*/
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);*/
+}
+.tmp {
+  font-size: 64px;
+  font-weight: bold;
+}
+.projects {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30px 1fr;
 }
 .grid {
+  margin: auto;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -28,7 +60,8 @@ header {
 img {
   max-width: 100%;
   display: flex;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+  /*border-radius: 2px;*/
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
 }
 .caption {
   padding: 10px;
@@ -36,15 +69,7 @@ img {
 }
 a {
   text-decoration: none;
-  color: rgb(50, 50, 50);
-  font-family: Montserrat;
-  font-weight: bold;
-}
-span {
-  margin: 0;
-  color: rgb(50, 50, 50);
-  font-family: Montserrat;
-  font-weight: bold;
+  color: #454444;
 }
 @media screen and (max-width: 800px) {
   .grid {
