@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
 }
 .grid {
   padding: 50px;
@@ -28,7 +28,7 @@ header {
 img {
   max-width: 100%;
   display: flex;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
 }
 .caption {
   padding: 10px;
