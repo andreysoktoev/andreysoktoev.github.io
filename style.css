@@ -1,6 +1,7 @@
 html {
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto Condensed', Arial;
+  font-size: 14px;
   background-color: WhiteSmoke;
   scroll-behavior: smooth;
 }
