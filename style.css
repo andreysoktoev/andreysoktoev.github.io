@@ -21,7 +21,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(245, 245, 245, 0.95);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
 }
 nav ul {
   padding-right: 50px;
@@ -61,7 +61,7 @@ img {
   max-width: 100%;
   display: flex;
   /*border-radius: 2px;*/
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
 }
 .caption {
   padding: 10px;
