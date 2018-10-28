@@ -53,6 +53,7 @@ nav li {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr 50px;
+  padding: 0 50px;
 }
 img {
   max-width: 100%;
