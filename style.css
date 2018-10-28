@@ -1,8 +1,7 @@
 html {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', Arial;
-  font-size: 14px;
-  color: #454444;
+  font-family: Montserrat, Arial;
+  font-size: 12px;
   background-color: whitesmoke;
   scroll-behavior: smooth;
 }
@@ -20,8 +19,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(245, 245, 245, 0.95);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+  background-color: whitesmoke;
+  /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);*/
+  border-bottom: 1px solid #dddddd;
 }
 nav ul {
   padding-right: 50px;
@@ -40,8 +40,9 @@ nav li {
   /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);*/
 }
 .tmp {
-  font-size: 25vmin;
+  font-size: 15vw;
   font-weight: bold;
+  color: #454444;
 }
 .projects {
   min-height: 100vh;
@@ -60,8 +61,8 @@ nav li {
 img {
   max-width: 100%;
   display: flex;
-  /*border-radius: 2px;*/
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+  /*border-radius: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);*/
 }
 .caption {
   padding: 10px;
@@ -69,7 +70,7 @@ img {
 }
 a {
   text-decoration: none;
-  color: #454444;
+  color: black;
 }
 @media screen and (max-width: 800px) {
   .grid {
