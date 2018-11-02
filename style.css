@@ -1,0 +1,58 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: Montserrat, Arial;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  scroll-snap-type: y mandatory;
+}
+.slide {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.home-title {
+  font-size: 10vw;
+  font-weight: bold;
+  color: #454444;
+}
+a {
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+img {
+  max-height: calc(100vh - 100px);
+  max-width: calc(100vw - 100px);
+  margin: auto;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.caption {
+  position: absolute;
+  top: 0;
+  color: transparent;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 3vh;
+}
+.caption:hover {
+  transition: 0.5s ease;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75));
+  color: rgba(255, 255, 255, 1);
+}
