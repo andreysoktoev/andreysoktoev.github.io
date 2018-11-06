@@ -1,6 +1,6 @@
 html {
   -webkit-font-smoothing: antialiased;
-  font-family: Montserrat, Arial;
+  font-family: "Google Sans", Arial;
   background-color: whitesmoke;
   scroll-behavior: smooth;
 }
@@ -9,50 +9,65 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: whitesmoke;
   scroll-snap-type: y mandatory;
 }
 .slide {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
 }
 .home-title {
-  font-size: 10vw;
-  font-weight: bold;
+  font-size: 5vw;
   color: #454444;
 }
 a {
-  margin: auto;
+  color: rgba(0, 0, 0, .5);
   position: relative;
-  display: flex;
+}
+a:hover {
+  color: rgba(0, 0, 0, 1);
 }
 img {
-  max-height: calc(100vh - 100px);
-  max-width: calc(100vw - 100px);
+  max-height: calc(100vh - 20vh);
+  max-width: calc(100vw - 20vw);
   margin: auto;
-  display: flex;
-  border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: block;
 }
 .caption {
   position: absolute;
   top: 0;
-  color: transparent;
+  right: 0;
+  color: white;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  font-size: 3vh;
+  align-items: flex-end;
+  color: transparent;
+  transition: .5s ease;
 }
 .caption:hover {
-  transition: 0.5s ease;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75));
-  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(360deg,
+    rgba(0, 0, 0, .618),
+    rgba(0, 0, 0, .382),
+    rgba(0, 0, 0, .236),
+    rgba(0, 0, 0, .146),
+    rgba(0, 0, 0, .090),
+    rgba(0, 0, 0, .056),
+    rgba(0, 0, 0, .034),
+    rgba(0, 0, 0, .021));
+  background-clip: padding-box;
+  color: white;
+}
+span {
+  padding: 10px 20px;
+  font-size: 3vh;
+}
+footer {
+  display: flex;
+  margin: 20px auto;
 }
