@@ -1,15 +1,21 @@
-html {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400&subset=cyrillic');
+
+* {
   -webkit-font-smoothing: antialiased;
-  font-family: "Google Sans", Arial;
-  background-color: whitesmoke;
+  font-family: Montserrat, Arial;
+  font-weight: 300;
+  transition: .2s;
   scroll-behavior: smooth;
+}
+html {
+  background-color: whitesmoke;
 }
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 .slide {
   min-height: 100vh;
@@ -17,11 +23,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 .home-title {
   font-size: 5vw;
-  color: #454444;
+  font-weight: 400;
+  color: #282828;
 }
 a {
   color: rgba(0, 0, 0, .5);
@@ -40,7 +47,6 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  color: white;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100%;
@@ -48,7 +54,7 @@ img {
   display: flex;
   align-items: flex-end;
   color: transparent;
-  transition: .5s ease;
+  transition: .1s;
 }
 .caption:hover {
   background: linear-gradient(360deg,
