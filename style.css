@@ -12,6 +12,7 @@ html {
   background-image: url('src/unsplash.jpg');
   background-size: cover;
   background-position: center top;
+  opacity: 0;
 }
 html, a {  
   color: gainsboro;
