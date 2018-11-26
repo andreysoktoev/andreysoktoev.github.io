@@ -4,11 +4,14 @@
   -webkit-font-smoothing: antialiased;
   font-family: Montserrat, Arial;
   font-weight: 300;
-  transition: .2s;
+  transition: .1s;
   scroll-behavior: smooth;
 }
 html {
-  background-color: #282828;
+  background-color: #282828;  
+  background-image: url('src/unsplash.jpg');
+  background-size: cover;
+  background-position: center top;
 }
 html, a {  
   color: gainsboro;
