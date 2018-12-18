@@ -13,6 +13,14 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #31639c;
+}
+a:hover {
+  text-decoration: underline;
+}
 nav {
   position: fixed;
   bottom: 0;
@@ -22,13 +30,11 @@ nav ul {
   font-size: 11px;
   margin: 0;
   padding: 0;
-  color: rgba(255, 255, 255, .75);
   overflow: hidden;
   box-shadow: 0 0 100px 50px white;
 }
 nav li {
-  background: #282828;
-  height: 50px;
+  background: white;
   width: 100px;
   list-style: none;
   display: flex;
@@ -36,15 +42,21 @@ nav li {
   align-items: center;
   text-transform: uppercase;
   cursor: pointer;
-  transition: .2s ease-out;
+  transition: .1s ease-out;
 }
-#ellipsis {
-  font-size: 2rem;
-}
-.hidden {
+.nav_item {
   height: 0;
   color: transparent;
-  background: rgba(255, 255, 255, .95);
+}
+.ellipsis {
+  height: 50px;
+  font-size: 2rem;
+  color: #282828;
+}
+.open {
+  height: 50px;
+  color: rgba(255, 255, 255, .75);
+  background: #282828;
 }
 content {
   padding: var(--padding);
@@ -52,13 +64,5 @@ content {
   max-width: 600px;
 }
 content li {
-  margin-bottom: 1rem;  
-}
-a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #31639c;
-}
-a:hover {
-  text-decoration: underline;
+  margin-bottom: 1rem;
 }
