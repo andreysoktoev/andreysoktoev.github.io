@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Spectral:400,500,600,700,800&subset=cyrillic');
+
+:root {
+  --padding: 20px;
+  font-family: Montserrat;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+nav ul {
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, .75);
+  overflow: hidden;
+  box-shadow: 0 0 100px 50px white;
+}
+nav li {
+  background: #282828;
+  height: 50px;
+  width: 100px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 var(--padding); */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s ease-out;
+}
+#ellipsis {
+  font-size: 2rem;
+}
+.hidden {
+  height: 0;
+  color: transparent;
+  background: rgba(255, 255, 255, .95);
+}
+content {
+  padding: var(--padding);
+  font-family: Spectral;
+  max-width: 600px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
